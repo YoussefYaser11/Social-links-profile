@@ -30,40 +30,42 @@
         box-sizing: border-box;
         background-color: hsl(0, 0%, 8%);
         font-family: "Inter", sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
         color: hsl(0, 0%, 100%);
+        position: relative;
+        text-align: center;
       }
       section {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%);
         background-color: hsl(0, 0%, 12%);
         width: 300px;
         text-align: center;
-        border-radius: 5px;
-        padding: 15px;
+        border-radius: 10px;
+        padding: 20px;
         margin: 50px 0;
       }
       section .avater-img img {
         width: 100px;
         height: 100px;
         border-radius: 50%;
+        margin: 20px 0 0 0;
       }
       section .content p {
         font-size: 14px;
       }
-      section .content h1 {
-        font-size: 14px;
-      }
-      section .content h3 {
+      section .content h2 {
         color: hsl(75, 94%, 57%);
-        font-size: 13px;
+        font-size: 14px;
         margin-bottom: 40px;
       }
       section .content span {
         padding: 10px;
+        font-size: 14px;
+        font-weight: bold;
         text-align: center;
-        width: calc(100% - 30px);
+        width: calc(100% - 40px);
         margin: 10px;
         border-radius: 5px;
         display: block;
@@ -82,8 +84,8 @@
         <img src="assets/images/avatar-jessica.jpeg" alt="" />
       </div>
       <div class="content">
-        <h2>Jessica Randall</h2>
-        <h3>London, United Kingdom</h3>
+        <h1>Jessica Randall</h1>
+        <h2>London, United Kingdom</h2>
         <p>"Front-end developer and avid reader."</p>
         <span>GitHub</span>
         <span>Frontend Mentor</span>
